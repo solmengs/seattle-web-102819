@@ -1,0 +1,12 @@
+require_relative 'config/environment'
+
+desc "Print Goodbye"
+task :goodbye do
+  p "Goodbye World!"
+end
+
+desc "This will start a console session"
+task :console do
+  # sh "bundle install"
+  Pry.start
+end
